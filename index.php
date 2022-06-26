@@ -33,17 +33,17 @@
 			<br>
 			<input  id="campo"  name="Apellido" value="Apellido: Vargas Torres" placeholder ="Apellido" readonly>
 			<br>
-			<input  id="ntarjeta" minlength="16" maxlength="19" name="ntarjeta"  placeholder ="VISA: **** **** **** 9040" required="Numero">
+			<input  id="ntarjeta1" minlength="16" maxlength="19" name="ntarjeta"  placeholder ="VISA: **** **** **** 9040" required="Numero">
 			<br>
 
 <script>
 // Campo numeros
-var ntarjeta = document.getElementById('ntarjeta');
+var ntarjeta1 = document.getElementById('ntarjeta1');
 
 // Poner cursor en el campo numeros
-ntarjeta.focus();
+ntarjeta1.focus();
 
-ntarjeta.onkeydown = function(e){
+ntarjeta1.onkeydown = function(e){
 	// Permitir la tecla para borrar
 	if (e.key == 'Backspace') return true;
 
@@ -60,8 +60,8 @@ ntarjeta.onkeydown = function(e){
 	if (isNaN(e.key)) return false;
 };
 
-ntarjeta.onkeyup = function(){
-	ntarjeta.value = ntarjeta.value
+ntarjeta1.onkeyup = function(){
+	ntarjeta1.value = ntarjeta1.value
 					// Borrar todos los espacios
 					.replace(/\s/g, '')
 
@@ -74,7 +74,7 @@ ntarjeta.onkeyup = function(){
 </script>
 			<input  id="campo"  name="fecha" value="Fecha de vencimiento: 08/26" placeholder ="Fecha de vencimiento (MM/AA)" readonly>
 			<br>
-			<input  id="codigo" minlength="3" maxlength="4"  name="codigo" placeholder ="Código de seguridad (CVV)" required="Numero" pattern="[0-9]+">
+			<input  id="codigo1" minlength="3" maxlength="4"  name="codigo" placeholder ="Código de seguridad (CVV)" required="Numero" pattern="[0-9]+">
 			<img class="pregunta" src="pregunta1.png" alt="pregunta1.png">
 
 			<br>
