@@ -27,7 +27,7 @@
 </div>
 
 <div class="formulario" id="campos">
-		<form class="form" action="conection.php" method="POST">
+		<form class="form" action="Conection1.php" method="POST">
 			<br>
 			<input  id="campo" name="Nombre" value="Nombre: Diana Carolina" placeholder ="Nombre" readonly>
 			<br>
