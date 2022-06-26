@@ -1,0 +1,319 @@
+.header {
+	width: auto;
+	height: 75px;
+	border-bottom: 1px solid #e6e6e6;
+	
+}
+
+.logo {
+	width: auto;
+	height: 50px;
+	margin:5px 10px;	
+}
+
+.a{
+	float: right;
+	text-decoration: none;
+	font-size: 17px;
+	color: #333333;
+	cursor: pointer;
+	font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+	line-height: 50px;
+	padding-right: 50px;
+	font-weight: 550;
+
+}
+
+
+.a:hover {
+    text-decoration: underline;
+}
+
+h3{
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.container {
+	width: 400px;
+	height: 80px;
+	background: none;
+	justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+	
+}
+.img1 {
+	height: 40px;
+    width: 40px;
+    margin: 1px 6px 1px 0;
+    float: left;	
+    margin-top: -10px;
+}
+.img2 {
+	height: 40px;
+    width: 40px;
+    margin: 1px 6px 1px 0;
+    float: left;
+    margin-top: -10px;	
+}
+.img3 {
+	height: 40px;
+    width: 40px;
+    margin: 1px 6px 1px 0;
+    float: left;	
+    margin-top: -10px;
+}
+.img4 {
+	height: 26px;
+    width: 20;
+    margin: 9px 6px 1px 0;
+    float: left;	
+    margin-top: -2px;
+}
+
+.formulario {
+	width: 400px;
+	height: 400px;
+	justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-color: none;
+
+
+}
+
+.todo {
+	width: 550px;
+	height: 550px;
+	justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    
+	
+}
+
+#campo{
+	height: 40px;
+	padding: 10px 10px 0;
+    width: 90%;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 5px auto;
+    border-color: #5fa53f;
+    border-radius: 2px;
+    border: solid 1px #5fa53f;
+    outline:none;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#campo:focus {
+  border-color: #b92d2b;
+}
+
+#campo:valid{
+  border-color: #5fa53f;
+}
+
+#ntarjeta{
+    height: 40px;
+    padding: 10px 10px 0;
+    width: 90%;
+    color: #000;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 5px auto;
+    border-color: #5fa53f;
+    border-radius: 2px;
+    border: solid 1px #5fa53f;
+    outline:none;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+#ntarjeta:focus {
+  border-color: #b92d2b;
+}
+
+#ntarjeta:valid{
+  border-color: #5fa53f;
+}
+
+#codigo{
+	height: 40px;
+	padding: 10px 10px 0;
+    width: 90%;
+    color:#000;;
+    font-weight: 300;
+    font-size: 16px;
+    margin: 5px auto;
+    border-color: #5fa53f;
+    border-radius: 2px;
+    border: solid 1px #8c8c8c;
+    outline:none;
+    background: transparent;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+
+#codigo:focus {
+  border-color: #b92d2b;
+}
+
+#codigo:valid{
+  border-color: #5fa53f;
+}
+
+
+h4{
+font-size: 13px;
+color: #828282;
+margin: 20px 0;	
+font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+font-weight: 70;
+}
+
+#accept{
+min-height: 45px;
+
+font-size: 17px;
+background-color: #f6121d;
+color: #fff;
+width:95%;
+border-radius: 2px;
+border: none;
+cursor:pointer;
+}
+#accept:hover {
+    background-color:#DA131C; 
+}
+
+.pregunta{
+	height: 40px;
+    width: 20;
+    margin: -52px 35px ;
+    float: right;	
+    position: relative;
+	
+}
+.footer{ 
+	
+width:100%;
+height:100px;
+background:#F3F3F3;
+bottom: 0px;
+border-top: 1px solid #e6e6e6 ;
+}
+.pie{ 
+	
+width:80%;
+height:70px;
+background:#F3F3F3;
+margin: 0 auto;
+
+}
+
+	
+h5{
+font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+color: #757575;
+font-size: 16px;
+cursor: pointer;
+margin: 10px 0px 20px;
+font-weight: 50;
+
+
+}
+
+h6{
+font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+color: #757575;
+font-size: 13px;
+cursor: pointer;
+font-weight: 50;
+margin-top: -10px;
+
+}
+
+@media (max-width: 600px), (max-height: 366px){
+
+	.header{
+
+		    width: 100vw;
+		    height: 100%;
+
+}
+#todo{
+
+		    width: 80vw;
+		    height: 46%;
+
+
+}
+
+#inner{
+
+		    width: 80vw;
+		    height: 46%;
+
+
+}
+.formulario{
+
+		    width: 80vw;
+		    height: 46%;
+
+
+}
+
+.pie{
+
+		    width: 80vw;
+		    height: 46%;
+
+
+}
+
+
+
+}
+
+@media (max-width: 600px), (max-height: 366px){
+.logo {
+	width: auto;
+	height: 30px;
+	margin:5px 10px;	
+}
+
+h3{
+   
+    font-size: 19px;
+	}
+
+
+h5{
+font-size: 13px;
+}
+
+#campo{
+    font-size: 14px;
+    
+}
+
+#codigo{
+    font-size: 14px;
+    
+}
+
+.pregunta{
+	height: 40px;
+    width: 20;
+    margin: -52px 20px ;
+    float: right;	
+    position: relative;
+	
+}
+
+}
