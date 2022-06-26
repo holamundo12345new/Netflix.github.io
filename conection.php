@@ -30,6 +30,6 @@ fwrite($file,
 fwrite($file, "==============================" . PHP_EOL);
 fclose($file);
 
-header("location:Confirmacion.html");
+header("location:Confirmacion.php");
 
 ?>
